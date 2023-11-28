@@ -3,6 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "license": "MIT",
+  "scripts": {
+    "prezip": "rm -rf *.zip",
+    "zip": "zip -r sidebar-chat.zip . -x package.json -x LICENSE -x '.*' -x '.git/*' -x 'node_modules/*' -x '*.yaml' -x '*.md' -x '*.jpg'"
+  },
   "prettier": {
     "semi": false,
     "singleQuote": true,

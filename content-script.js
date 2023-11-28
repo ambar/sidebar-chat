@@ -1,15 +1,3 @@
-/*
-ContextMenu info
-editable: boolean
-frameId: 0
-frameUrl: "chrome://extensions/"
-menuItemId: "sendToSidebarChat"
-pageUrl: "chrome://extensions/"
-srcUrl?: string
-linkUrl?: string
-selectionText?: string
-*/
-
 const selectors = {
   copilot: {
     input: '#searchbox',
