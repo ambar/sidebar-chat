@@ -1,0 +1,14 @@
+{
+  "name": "sidebar-chat",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": false
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.253"
+  }
+}

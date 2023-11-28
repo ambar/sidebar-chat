@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Sidebar Chat",
+  "version": "1.0",
+  "description": "Copilot in the browser sidebar",
+  "icons": {
+    "16": "images/icon-128.png",
+    "48": "images/icon-128.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://copilot.microsoft.com/"],
+      "all_frames": true,
+      "run_at": "document_start",
+      "js": ["content-script.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "permissions": ["sidePanel", "contextMenus"],
+  "action": {
+    "default_title": "Click to open Sidebar Chat"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
+}
