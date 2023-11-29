@@ -4,9 +4,14 @@
   "version": "1.1.0",
   "license": "MIT",
   "scripts": {
-    "bump": "npm run zip && standard-version",
+    "bump": "standard-version",
     "prezip": "rm -rf *.zip",
     "zip": "zip -r sidebar-chat.zip . -x package.json -x LICENSE -x '.*' -x '.git/*' -x 'node_modules/*' -x '*.yaml' -x '*.md' -x '*.jpg'"
+  },
+  "standard-version": {
+    "scripts": {
+      "posttag": "npm run zip"
+    }
   },
   "prettier": {
     "semi": false,
