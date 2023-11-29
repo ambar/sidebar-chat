@@ -1,4 +1,7 @@
 {
+  "chrome_extension_name": {
+    "message": "Sidebar Chat"
+  },
   "chrome_extension_description": {
     "message": "浏览器侧栏中的 Copilot"
   },
