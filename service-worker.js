@@ -6,7 +6,9 @@ chrome.sidePanel
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: 'sendToSidebarChat',
-    title: 'Send to Sidebar Chat',
+    title: `${chrome.i18n.getMessage('sendTo')} ${chrome.i18n.getMessage(
+      'chrome_extension_name'
+    )}`,
     contexts: ['all'],
   })
 })

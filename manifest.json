@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Sidebar Chat",
+  "name": "__MSG_chrome_extension_name__",
   "version": "1.0",
-  "description": "Copilot in the browser sidebar",
+  "description": "__MSG_chrome_extension_description__",
+  "default_locale": "en",
   "icons": {
     "16": "images/icon-128.png",
     "48": "images/icon-128.png",
@@ -24,7 +25,7 @@
   },
   "permissions": ["sidePanel", "contextMenus"],
   "action": {
-    "default_title": "Click to open Sidebar Chat"
+    "default_title": "__MSG_browser_action_title__"
   },
   "commands": {
     "_execute_action": {

@@ -1,0 +1,11 @@
+{
+  "chrome_extension_description": {
+    "message": "浏览器侧栏中的 Copilot"
+  },
+  "browser_action_title": {
+    "message": "侧栏中打开"
+  },
+  "sendTo": {
+    "message": "发送到"
+  }
+}

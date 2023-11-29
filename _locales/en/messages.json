@@ -1,0 +1,14 @@
+{
+  "chrome_extension_name": {
+    "message": "Sidebar Chat"
+  },
+  "chrome_extension_description": {
+    "message": "Copilot in the browser sidebar"
+  },
+  "browser_action_title": {
+    "message": "Open in side panel"
+  },
+  "sendTo": {
+    "message": "Send to"
+  }
+}
